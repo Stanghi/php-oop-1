@@ -1,6 +1,13 @@
 <?php
 include_once './class/Movie.php';
 include_once './class/Cast.php';
+
+$movie1 = new Movie("Creed", "Sportivo", "2h 13m", 5, 2015, new Cast("M.B. Jordan", "Tony Bellew"));
+$movie1->setImg("https://pad.mymovies.it/filmclub/2015/04/113/locandina.jpg");
+var_dump($movie1);
+
+$movie2 = new Movie("The Guilty", "Thriller", "1h 30m", 5, 2021, new Cast("Jake Gyllenhaal"));
+var_dump($movie2);
 ?>
 
 <!DOCTYPE html>
